@@ -115,7 +115,7 @@ body{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-.day-name,.day-number,.year{
+.month-name,.day-number,.year{  
     margin-left: 8px;
 }
 .dot-menu-btn{
