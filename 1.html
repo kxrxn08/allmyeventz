@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        function f1() {
+            $(function () { $("#nav").load('stopwatch.html'); });
+        }
+        function f2() {
+            var randomNumber = new Date().getTime(); // generate a random number
+            $(function () { $("#nav").load('countdowntimer.html?' + randomNumber); });
+        }
+
+        function f3() {
+            $(function () { $("#nav").load('index.html'); });
+        }
+        // function loadPage(pageName) {
+        //     var xhttp = new XMLHttpRequest();
+        //     xhttp.onreadystatechange = function () {
+        //         if (this.readyState == 4 && this.status == 200) {
+        //             document.getElementById("page-container").innerHTML = this.responseText;
+        //         }
+        //     };
+        //     xhttp.open("GET", pageName, true);
+        //     xhttp.send();
+        // }
+    </script>
+</head>
+
+<body>
+    <!-- <div id="page-container"></div> -->
+    <button onclick="f1()">Stop</button>
+    <button onclick="f2()">Timer</button>
+    <button onclick="f3()">Clock</button>
+    <!-- <a href="#" onclick="loadPage('index.html')">Page 1</a>
+<a href="#" onclick="loadPage('stopwatch.html')">Page 2</a>
+<a href="#" onclick="loadPage('countdowntimer.html')">page3</a> -->
+    <div id="nav"></div>
+</body>
+
+</html>

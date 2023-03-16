@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2e2e44 !important;
+}
+.digits{
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 24px 32px;
+    color: white;
+    padding: 30px;
+    background:#2d2f41;
+    box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5em;
+    width: 350px !important;
+}
+.digits:before{
+    content:'';
+      position: absolute;
+      background: linear-gradient(-90deg,#24ff6d,#2f93f1,#ff5e9a);
+      background-size: 200% 200%;
+      top: -10px;
+      left: -8px;
+      bottom: -11px;
+      right: -10px;
+      z-index: -1;
+      filter: blur(150px);
+      animation: glowing 2s ease-in-out infinite alternate ;
+  }
+  @keyframes glowing {
+    0%,100%{
+        background-position: 0% 0%;
+        /* transform: rotate(180deg); */
+        transform: rotate(180deg);
+    }
+    50%{
+        background-position: 50% 50%;
+        transform: rotate(-180deg);
+    }
+  }
+  .back-transp {
+    /* font-size: 5.5em; */
+    font-weight: 60;
+    background:  -webkit-linear-gradient(45deg,#fb89ff,#65baff);
+    /* background: linear-gradient(90deg,#8208e6,#ff7777,#ff9def,#7bc2fd); */
+    background-size: 200% 200%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+.btns{
+    position: relative;
+    display: flex;
+    margin-top: 10% !important;
+}
+button{
+    box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
+    color: white;
+    background-color: #2d2f41;
+    padding: 10px;
+    border-radius: 10%;
+    margin: auto;
+    border: none;
+    /* border: 1px solid rgb(70, 31, 78); */
+}
+button:disabled{
+    /* box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8); */
+    color: white;
+    border: none;
+    background-color:rgba(14, 21, 37, 0.5) ;
+    padding: 10px;
+    border-radius: 10%;
+    margin: auto;
+}
+.parent-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timer-container,
+  .button-container {
+    width: 100%;
+  } 

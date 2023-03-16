@@ -30,10 +30,10 @@ body{
     position: absolute;
     background: linear-gradient(-90deg,#24ff6d,#2f93f1,#ff5e9a);
     background-size: 200% 200%;
-    top: -147px;
-    left: 97px;
-    bottom: -150px;
-    right: 100px;
+    top: -15px;
+    left: -17px;
+    bottom: -16px;
+    right: -17px;
     z-index: -1;
     filter: blur(150px);
     animation: glowing 2s ease-in-out infinite alternate ;

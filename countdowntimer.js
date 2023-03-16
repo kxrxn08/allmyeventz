@@ -1,6 +1,6 @@
 class Timer {
   constructor(root) {
-    root.innerHTML = Timer.getHTML();
+    // root.innerHTML = Timer.getHTML();
 
     this.el = {
       minutes: root.querySelector(".timer__part--minutes"),
